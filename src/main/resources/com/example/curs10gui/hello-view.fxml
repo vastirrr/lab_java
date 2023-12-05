@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.curs10gui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" prefHeight="32.0" prefWidth="69.0" text="Hello!"/>
+    <Button onAction="#onPWPButtonClick" prefHeight="32.0" prefWidth="69.0" text="PWP!">
+      <font>
+         <Font name="Castellar" size="13.0" />
+      </font></Button>
+    <Button text="Goodbye!" />
+    <Button text="pwp!">
+      <graphic>
+      </graphic></Button>
+   <Accordion />
+ <TitledPane animated="false" text="wooooah" />
+   <Box depth="100" height="100" width="100" />
+</VBox>
