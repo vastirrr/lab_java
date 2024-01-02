@@ -26,11 +26,11 @@ public class Settings {
     }
 
     //Trebuie schimbate ultimele 2 get-ere !!!!
-    public String getPatientsFile() {
-        return properties.getProperty("Patients");
+    public String getTorturiFile() {
+        return properties.getProperty("Tort");
     }
 
-    public String getAppointmentsFile() {
-        return properties.getProperty("Appointments");
+    public String getComandaFile() {
+        return properties.getProperty("Comanda");
     }
 }

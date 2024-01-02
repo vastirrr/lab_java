@@ -4,20 +4,20 @@ import java.util.Date;
 import java.util.List;
 
 public class Comanda extends Entity{
-    List<Tort> torturi;
+    List<Integer> torturiID;
     Date data;
-    public Comanda(int ID, List<Tort> torturi, Date data) {
+    public Comanda(int ID, List<Integer> torturi, Date data) {
         super(ID);
-        this.torturi = torturi;
+        this.torturiID = torturi;
         this.data = data;
     }
 
-    public List<Tort> getTorturi() {
-        return torturi;
+    public List<Integer> getTorturi() {
+        return torturiID;
     }
 
-    public void setTorturi(List<Tort> torturi) {
-        this.torturi = torturi;
+    public void setTorturi(List<Integer> torturi) {
+        this.torturiID = torturi;
     }
 
     public Date getData() {
@@ -31,7 +31,7 @@ public class Comanda extends Entity{
     @Override
     public String toString() {
         return "Comanda{" +
-                "torturi=" + torturi +
+                "torturiID=" + torturiID +
                 ", data=" + data +
                 ", ID=" + ID +
                 '}';

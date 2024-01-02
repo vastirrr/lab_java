@@ -11,6 +11,6 @@ public class TortFactory implements IEntityFactory<Tort> {
 
     @Override
     public String toFileString(Tort d) {
-        return d.getID() + "," + d.getTip();
+        return d.getID() + "," + d.getTip() + "\n";
     }
 }
