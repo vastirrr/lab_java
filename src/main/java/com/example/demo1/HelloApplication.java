@@ -37,7 +37,7 @@ public class HelloApplication extends Application {
         }
 
         TortService tortService = new TortService(tortRepository);
-        ComandaService comandaService = new ComandaService(comandaRepository);
+        ComandaService comandaService = new ComandaService(comandaRepository, tortRepository);
         HelloController controller = new HelloController(tortService, comandaService);
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
